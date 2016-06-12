@@ -1,0 +1,16 @@
+{
+  "name": "generator-npm-pasta",
+  "version": "0.1.0",
+  "description": "Generate copypasta for npm modules",
+  "files": [
+    "generators/app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "camelize": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.20.3"
+  }
+}
