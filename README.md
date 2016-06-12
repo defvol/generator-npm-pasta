@@ -3,6 +3,7 @@
 Generate copypasta for npm modules
 
 ```
+% npm install -g generator-npm-pasta
 % yo npm-pasta
 ```
 
