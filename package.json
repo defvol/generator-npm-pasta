@@ -8,6 +8,7 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "repository": "rodowi/generator-npm-pasta",
   "dependencies": {
     "camelize": "^1.0.0",
     "mkdirp": "^0.5.1",
