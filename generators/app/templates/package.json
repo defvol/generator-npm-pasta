@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "<%= description %>",
   "bin": {
-    "<%= appname %>": "lib/cli.js"
+    "<%= project %>": "lib/cli.js"
   },
   "main": "lib/index.js",
   "scripts": {

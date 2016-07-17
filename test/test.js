@@ -34,9 +34,9 @@ describe('npm-pasta:app', function () {
   });
 
   it('updates templates correctly', function () {
-    var content = new RegExp('function npmFoo');
+    var content = new RegExp('function ()');
     assert.fileContent('lib/index.js', content);
-    content = new RegExp('usage: npmFoo');
+    content = new RegExp('usage: npm-foo');
     assert.fileContent('lib/utils.js', content);
   });
 

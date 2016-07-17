@@ -14,7 +14,7 @@ module.exports = generators.Base.extend({
         type    : 'input',
         name    : 'project',
         message : 'Project name',
-        default : this.appname
+        default : this.project
       },
       {
         type    : 'input',
@@ -34,8 +34,6 @@ module.exports = generators.Base.extend({
       this.project = answers.project;
       this.description = answers.description;
       this.author = answers.author;
-
-      this.appname = camelize(this.project);
       this.year = (new Date()).getYear() + 1900;
 
       done();
@@ -44,7 +42,7 @@ module.exports = generators.Base.extend({
   writing: function () {
     this.log('Writing some copypasta');
 
-    this.destinationRoot(this.appname);
+    this.destinationRoot(this.project);
 
     this.template('lib/index.js');
     this.template('lib/utils.js');

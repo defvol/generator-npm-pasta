@@ -7,7 +7,7 @@ var fs = require('fs');
 module.exports.usage = function () {
   var u = [];
   u.push('<%= description %>');
-  u.push('usage: <%= appname %> [options]');
+  u.push('usage: <%= project %> [options]');
   u.push('');
   u.push(' --help prints this message');
   u.push(' --version prints package version');

@@ -1,4 +1,4 @@
-module.exports = function <%= appname %> (options) {
+module.exports = function (options) {
   options = options || {};
   return 'pong';
 }
