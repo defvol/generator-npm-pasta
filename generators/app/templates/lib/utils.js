@@ -1,4 +1,5 @@
 var fs = require('fs');
+var path = require('path');
 
 /**
  * Get usage instructions
@@ -20,6 +21,6 @@ module.exports.usage = function () {
  * @return {String} version number
  */
 module.exports.version = function () {
-  var data = fs.readFileSync(__dirname + '/../package.json');
+  var data = fs.readFileSync(path.join(__dirname, '..', 'package.json'));
   return JSON.parse(data).version;
 };
