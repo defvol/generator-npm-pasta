@@ -1,4 +1,4 @@
 module.exports = function (options) {
-  options = options || {};
-  return 'pong';
+  options = options || {}
+  return 'pong'
 }
