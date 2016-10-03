@@ -9,7 +9,11 @@
     "test": "mocha test"
   },
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "module",
+    "generator",
+    "cli",
+    "command-line"
   ],
   "repository": "rodowi/generator-npm-pasta",
   "dependencies": {
