@@ -7,6 +7,8 @@
   },
   "main": "lib/index.js",
   "scripts": {
+    "lint": "eslint lib/*.js test/*.js",
+    "pretest": "npm run lint",
     "test": "tape test/*.test.js"
   },
   "keywords": [
