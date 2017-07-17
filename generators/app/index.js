@@ -51,7 +51,6 @@ module.exports = generators.Base.extend({
     this.template('README.md');
 
     this.copy('lib/cli.js');
-    this.copy('eslintrc.json', '.eslintrc.json');
     this.copy('gitignore', '.gitignore');
     this.copy('npmignore', '.npmignore');
     this.directory('test');
@@ -59,10 +58,7 @@ module.exports = generators.Base.extend({
   installing: function () {
     this.log('Installing dependencies');
     var dev = [
-      'eslint',
-      'eslint-config-standard',
-      'eslint-plugin-promise',
-      'eslint-plugin-standard',
+      'standard',
       'tape'
     ];
     this.npmInstall(['minimist'], { 'save': true });

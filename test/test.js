@@ -21,7 +21,6 @@ describe('npm-pasta:app', function () {
 
   it('creates the project files', function () {
     assert.file([
-      '.eslintrc.json',
       '.gitignore',
       '.npmignore',
       'LICENSE',
