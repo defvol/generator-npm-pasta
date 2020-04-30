@@ -59,7 +59,7 @@ module.exports = generators.Base.extend({
     this.log('Installing dependencies');
     var dev = [
       'standard',
-      'tape'
+      'mocha'
     ];
     this.npmInstall(['minimist'], { 'save': true });
     this.npmInstall(dev, { 'saveDev': true });

@@ -28,6 +28,6 @@ project/
 
 Dependencies:
 - [minimist](https://github.com/substack/minimist)
-- [tape](https://github.com/substack/tape)
+- [mocha](https://github.com/mochajs/mocha)
 
 Powered by [yeoman](http://yeoman.io/).

@@ -1,15 +1,17 @@
-var test = require('tape')
-var utils = require('../lib/utils')
+/* eslint-env mocha */
 
-test('usage', function (t) {
-  var got = utils.usage()
-  t.true(got.match(/usage/), 'returns some instructions')
-  t.true(got.length > 50, 'lots of instructions')
-  t.end()
-})
+const assert = require('assert')
+const utils = require('../lib/utils')
 
-test('version', function (t) {
-  var got = utils.version()
-  t.true(got.match(/^\d+\.\d+\.\d+$/), 'finds basic semver in package.json')
-  t.end()
+describe('utils', function () {
+  it('#usage', function () {
+    const got = utils.usage()
+    assert(got.match(/usage/), 'returns some instructions')
+    assert(got.length > 50, 'lots of instructions')
+  })
+
+  it('#version', function () {
+    const got = utils.version()
+    assert(got.match(/^\d+\.\d+\.\d+$/), 'finds basic semver in package.json')
+  })
 })
