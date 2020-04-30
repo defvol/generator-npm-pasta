@@ -1,4 +1,3 @@
-module.exports = function (options) {
-  options = options || {}
+module.exports = function (options = {}) {
   return 'pong'
 }

@@ -1,12 +1,12 @@
-var fs = require('fs')
-var path = require('path')
+const fs = require('fs')
+const path = require('path')
 
 /**
  * Get usage instructions
  * @return {String} the instructions to run this thing
  */
 module.exports.usage = function () {
-  var u = []
+  const u = []
   u.push('<%= description %>')
   u.push('usage: <%= project %> [options]')
   u.push('')
@@ -21,6 +21,6 @@ module.exports.usage = function () {
  * @return {String} version number
  */
 module.exports.version = function () {
-  var data = fs.readFileSync(path.join(__dirname, '..', 'package.json'))
+  const data = fs.readFileSync(path.join(__dirname, '..', 'package.json'))
   return JSON.parse(data).version
 }

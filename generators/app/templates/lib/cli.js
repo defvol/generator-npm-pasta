@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var argv = require('minimist')(process.argv.slice(2))
-var pack = require('./index')
-var util = require('./utils')
+const argv = require('minimist')(process.argv.slice(2))
+const pack = require('./index')
+const util = require('./utils')
 
 if (argv.version || argv.v) {
   console.log(util.version())
